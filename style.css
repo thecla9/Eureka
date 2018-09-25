@@ -1,0 +1,346 @@
+.jumbotron {
+		background-color:white;
+                background-image: 
+		margin-top:-20px;
+		text-align:center;
+		margin-left:40px;
+	        margin-right:40px;
+}
+.navbar {
+	background-color:limegreen;
+	margin-left:40px;
+	margin-right:40px;
+	margin-top:5px;
+}
+.navbar-header{
+	height:70px;
+	
+}
+.nav navbar-nav {
+	color:yellow;
+	border-color:yellow;
+}
+h1 {
+	margin-top:-20px;
+	text-align:center;
+}
+h2 {
+	
+	text-align:center;
+	margin-top:-0px;
+}
+hr {
+	width:30%;
+}
+.btn {
+	background-color:limegreen;
+	color:white;
+}
+.column{
+	
+	background-color:saddle brown;
+	float:left;
+	width:50%;
+	padding:10px;
+	height:200px;
+	margin-top:-38px;
+	flex:50%;
+	
+	
+}
+.row{
+	
+	height:300px;
+
+	width:33.3%;
+    float:left;
+}
+.row1{
+	
+	height:300px;
+
+	width:25%;
+    float:left;
+}
+
+
+h3 {
+	
+	text-align:center;
+	margin-top:-0px;
+}
+#benefits{
+	
+	overflow:hidden;
+	background-color:limegreen;
+    margin-top:-3px;
+	margin-left:40px;
+	margin-right:40px;
+		
+}
+#main {
+	border:1px solid black;
+	border-radius:5px;
+	height:300px;
+	overflow:hidden;
+	background-color:white;
+    margin-top:0px;
+	margin-left:40px;
+	margin-right:40px;
+
+}
+#pro {
+	border:1px solid black;
+	border-radius:5px;
+	height:600px;
+	overflow:hidden;
+	background-color:white;
+    margin-top:-710px;
+	margin-left:40px;
+	margin-right:40px;
+margin-bottom:110px;
+}
+.main2 {
+	border:1px solid black;
+	height:200px;
+	overflow:hidden;
+	background-color:#ddd;
+    margin-top:-205px;
+	margin-left:40px;
+	margin-right:40px;
+
+}
+.main4 {
+	border:1px solid black;
+	height:200px;
+	overflow:hidden;
+	background-color:#ddd;
+    margin-top:-10px;
+	margin-left:40px;
+	margin-right:40px;
+
+}
+.main3 {
+	border:1px solid black;
+	height:200px;
+	overflow:hidden;
+	background-color:#ddd;
+    margin-top:-600px;
+	margin-left:40px;
+	margin-right:40px;
+
+}
+#footer {
+	border:1px solid black;
+	height:40px;
+	width:1185px;
+	background-color:limegreen;
+margin-left:40px;
+	margin-right:40px;
+	margin-top:-20px;
+}
+li{
+	
+	color:black;
+	float:center;
+}
+ul li a{
+	text-decoration:none;
+	border:1px solid white;
+	padding:20px;
+	border-color:limegreen;
+	font-family:verdana;
+
+}
+a:hover {
+	background-color:white;
+}
+.b{
+	border:1px solid green;
+	height:100px;
+	width:33.3%;
+    float:left;}
+}
+
+.box {
+	border:1px solid green;
+	height:300px;
+	width:33.3%;
+float:left;}
+
+img{
+	margin-right:10px;
+    margin-top:-18px;	
+}
+.wrapper{
+	background-color:black;
+		margin-top:-5px;
+		height:1400px;
+}
+#about{
+	background-color:white;
+		margin-left:40px;
+	margin-right:40px;
+	margin-top:-25px;
+		height:400px;
+}
+.form1{
+	background-color:white;
+		margin-left:80px;
+	margin-right:80px;
+	margin-top:-25px;
+		height:400px;
+}
+.form-control{
+	width:550px;
+	float:center;
+}
+
+#content{
+	background-color:limegreen;
+	height:100px;
+   text-align:center;
+margin-left:40px;
+	margin-right:40px;
+	overflow:hidden;
+	 margin-top:-10px;
+}
+#content1{
+	background-color:limegreen;
+	height:100px;
+   text-align:center;
+margin-left:40px;
+	margin-right:40px;
+
+	 margin-top:3px;
+}
+p{
+	margin-bottom:-10px;
+}
+
+#about2{
+	border:1px solid black;
+	height:300px;
+	width:1185px;
+	background-color:limegreen;
+    margin-left:40px;
+	margin-right:40px;
+	margin-top:-650px;
+	margin-bottom:-10px;
+}
+#content2{
+	background-color:white;
+	height:100px;
+   text-align:center;
+margin-left:40px;
+	margin-right:40px;
+
+	 margin-top:3px;
+}
+
+ {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	margin-bottom:40px;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+margin-bottom:-18px;
+margin-left:39.5px;
+margin-right:39px;
+margin-top:-40px;
+}
+
+.col-15 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-65 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-15, .col-65, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+#content4{
+	background-color:limegreen;
+	height:100px;
+   text-align:center;
+margin-left:40px;
+	margin-right:40px;
+	overflow:hidden;
+	 margin-top:-70px;
+	 margin-bottom:0px;
+}
