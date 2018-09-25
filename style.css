@@ -15,6 +15,66 @@ footer {
     background-color: limegreen;
     padding: 10px;
 }
+
+.row-details{
+    
+    background-color:#a9a9a9;
+}
+
+
+
+
+.form-control {
+    width: 550px;
+    float: center;
+}
+
+
+.col-15 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-65 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+textarea{
+width: 1000px;
+
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+     margin-bottom:50px;
+    
+}
+.row {
+    margin-bottom: 4px;
+}
+input {
+    width: 1000px;    |
+}
+
+.pics img {
+    width: 100%;
+}
 /*.jumbotron {
 		background-color:white;
 		margin-top:-10px;
@@ -198,17 +258,7 @@ img{
 	margin-top:-25px;
 		height:400px;
 }
-.form1{
-	background-color:white;
-		margin-left:80px;
-	margin-right:80px;
-	margin-top:-25px;
-		height:400px;
-}
-.form-control{
-	width:550px;
-	float:center;
-}
+
 
 #content{
 	background-color:limegreen;
@@ -301,35 +351,9 @@ margin-right:39px;
 margin-top:-40px;
 }
 
-.col-15 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
 
-.col-65 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-
-.col-25 {
-    float: left;
-    width: 35%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 65%;
-    margin-top: 6px;
-}
 /* Clear floats after the columns */
-/*.row2:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 /*@media screen and (max-width: 600px) {
