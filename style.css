@@ -1,6 +1,22 @@
-.jumbotron {
+nav{
+    background-color: limegreen;
+}
+
+    nav li a{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    nav li a:hover {
+        background-color: white;
+    }
+
+footer {
+    background-color: limegreen;
+    padding: 10px;
+}
+/*.jumbotron {
 		background-color:white;
-                background-image: 
 		margin-top:-10px;
 		text-align:center;
 		margin-left:40px;
@@ -309,14 +325,14 @@ margin-top:-40px;
     margin-top: 6px;
 }
 /* Clear floats after the columns */
-.row2:after {
+/*.row2:after {
     content: "";
     display: table;
     clear: both;
-}
+}*/
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .col-15, .col-65, input[type=submit] {
         width: 100%;
         margin-top: 0;
@@ -342,4 +358,4 @@ margin-left:40px;
 	overflow:hidden;
 	 margin-top:-70px;
 	 margin-bottom:0px;
-}
+}*/
