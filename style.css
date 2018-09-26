@@ -75,6 +75,10 @@ input {
 .pics img {
     width: 100%;
 }
+.row-about{
+    background-color:khaki;
+    height:250px;
+}
 /*.jumbotron {
 		background-color:white;
 		margin-top:-10px;
