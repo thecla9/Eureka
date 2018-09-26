@@ -26,7 +26,6 @@ footer {
 
 .form-control {
     width: 550px;
-    float: center;
 }
 
 
@@ -53,10 +52,6 @@ footer {
     width: 65%;
     margin-top: 6px;
 }
-textarea{
-width: 1000px;
-
-}
 
 .row2:after {
     content: "";
@@ -68,8 +63,8 @@ width: 1000px;
 .row {
     margin-bottom: 4px;
 }
-input {
-    width: 1000px;    |
+input, textarea {
+    width: 60%;    
 }
 
 .pics img {

@@ -59,70 +59,64 @@
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1><i><b>PRODUCT SIZES</b></i></h1>
+                <h1><i><b>Order form</b></i></h1>
                 <hr>
+
+                Note that we have products of different sizes
+            
+           <h4> 1 litre - #1000 </h4>
+
+                 
+           <h4>50cl - #500 </h4>
+
+                    <h4>25cl- #250 </h4>
+                <h4>20cl- #150 </h4>
+
+                    </ul>
+                </div>
             </div>
-
-            <ul>
-                <li> 1 litre - #1000 </li>
-
-            </ul>
-
         </div>
-        <div class="b">
-            <ul>
-                <li>50cl - #500 </li>
-
-            </ul>
-        </div>
-        <div class="b">
-            <ul>
-                <li>25cl- #250 and 20cl- #150 </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <h2>Order Form</h2>
-
-
-    <div class="container2">
+    <div class="container1">
         <form action="success.html">
-            <div class="row2">
-                <div class="col-15">
-                    <label for="fname">Customer name</label>
+            <div class="row row2">
+                <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
+                    <label for="fname">First Name</label>
                 </div>
-                <div class="col-65">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-            </div>
-            <div class="row2">
-                <div class="col-15">
-                    <label for="lname">	Delivery address</label>
-                </div>
-                <div class="col-65">
-                    <input type="text" id="lname" name="Delivery Address" placeholder="The delivery location..">
+                <div class="col-sm-12 col-md-9">
+                    <input type="text" id="fname" name="Your name" placeholder="Your name..">
                 </div>
             </div>
-            <div class="row2">
-                <div class="col-15">
-                    <label for="Container2">Bottle</label>
+            <div class="row row2">
+                <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
+                    <label for="devadd">Delivery address</label>
                 </div>
-                <div class="col-65">
+                <div class="col-sm-12 col-md-9">
+                    <input type="text" id="devadd" name="Delivery address" placeholder="Your address.">
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
+                    <label for="bottlesize">Bottle size</label>
+                </div>
+                <div class="col-sm-12 col-md-9">
+
                     <select id="size" name="size">
                         <option value="None">None</option>
                         <option value="50cl">50cl</option>
                         <option value="1ltre">1 litre</option>
                         <option value="25cl">25cl</option>
                         <option value="20cl">20cl</option>
+
                     </select>
+
                 </div>
             </div>
-            <div class="row2">
-                <div class="col-15">
-                    <label for="Local Government Area">Local Government</label>
+
+            <div class="row row2">
+                <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
+                    <label for="lga">Local Government</label>
                 </div>
-                <div class="col-65">
+                <div class="col-sm-12 col-md-9">
                     <select id="Local Government" name="Local Government">
                         <option value="None">None</option>
                         <option value="Surulere">Surulere</option>
@@ -132,29 +126,58 @@
                         <option value="Festac">Festac</option>
                         <option value="Ikeja">Ikeja</option>
 
+
                     </select>
+
                 </div>
             </div>
-            <div class="row2">
-                <div class="col-15">
+
+
+            <div class="row row2">
+                <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
+                    <label for="quantity">Quantity</label>
+                </div>
+                <div class="col-sm-12 col-md-9">
+
+                    <select id="size" name="size">
+                        <option value="None">None</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        option value="9"></option>
+                        <option value="10">10</option>
+                        <option value="above 10">above 10</option>
+                        <option value="Event">for Event order</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
                     <label for="subject">Subject</label>
                 </div>
-                <div class="col-65">
+                <div class="col-sm-12 col-md-9">
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                 </div>
             </div>
-            <div class="row2">
-                <input type="submit" value="Submit">
+            <div class="row row2">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <input type="submit" value="Submit">
+                </div>
             </div>
         </form>
-    </div>
-    </div>
-    </div>
-    </form>
     </div>
 
     </div>
     </div>
+
+
 
 
 
