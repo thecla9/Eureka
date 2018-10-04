@@ -65,7 +65,7 @@
             </div>
             <div class="col-sm-12 ">
 
-               
+
                 <p class="text-center">Fill out the form below we will get back to you</p>
                 <div class="container1">
                     <form action="success.html">
@@ -159,6 +159,21 @@
         </div>
 
 
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
         <footer class="row text-center">
             <div class="col" style="font-size: 22px;font-weight:bold;">copyright@theclaworld 2018</div>
         </footer>
@@ -176,20 +191,21 @@
             const country = $('#country').val();
             const message = $('#message').val();
             const subject = `Contact message from ${fName} ${lName} in ${country} at Eureka`;
-
-            debugger
-
+            
             Email.send(
                 senderEmail,
                 "amesiakalabo@gmail.com",
                 subject,
                 message,
                 {
-                    token: "130cb553-b4df-4063-8409-8c841d395f4f",//"8887b98e-59d7-4bd5-b47d-01c083707123"
+                    token: "130cb553-b4df-4063-8409-8c841d395f4f",      //"8887b98e-59d7-4bd5-b47d-01c083707123"
                     callback: function done(msg) {
-                        debugger
-                        console.log(msg);
-                        alert("Message successfully sent");
+                        if (msg.toUpperCase() === "OK")
+                            $(".modal-title").text("Message successfully sent");
+                        else
+                            $(".modal-title").text("Error sending message");
+
+                        $("#myModal").modal();
                     }
                 }
             );
