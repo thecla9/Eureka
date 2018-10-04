@@ -6,8 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="keyword" content="lights,blog,indoor light, outdoor lights, etc">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-4.1.3.css" />
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -88,6 +87,14 @@
                         </div>
                         <div class="row row2">
                             <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="col-sm-12 col-md-9">
+                                <input type="text" id="email" name="email" placeholder="Your email address..">
+                            </div>
+                        </div>
+                        <div class="row row2">
+                            <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
                                 <label for="country">Country</label>
                             </div>
                             <div class="col-sm-12 col-md-9">
@@ -101,16 +108,16 @@
                         </div>
                         <div class="row row2">
                             <div class="col-sm-9 offset-sm-3 col-md-2 offset-md-1">
-                                <label for="subject">Subject</label>
+                                <label for="message">Message</label>
                             </div>
                             <div class="col-sm-12 col-md-9">
-                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
                             </div>
                         </div>
                         <div class="row row2">
                             <div class="col-md-3"></div>
                             <div class="col-md-3">
-                                <input type="submit" value="Submit">
+                                <input type="button" value="Submit" onclick="submitMessage();">
                             </div>
                         </div>
                     </form>
@@ -160,5 +167,33 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
+    <script type="text/javascript">
+        function submitMessage() {
+            const senderEmail = $('#email').val();
+            const fName = $('#fname').val();
+            const lName = $('#lname').val();
+            const country = $('#country').val();
+            const message = $('#message').val();
+            const subject = `Contact message from ${fName} ${lName} in ${country} at Eureka`;
+
+            debugger
+
+            Email.send(
+                senderEmail,
+                "amesiakalabo@gmail.com",
+                subject,
+                message,
+                {
+                    token: "130cb553-b4df-4063-8409-8c841d395f4f",//"8887b98e-59d7-4bd5-b47d-01c083707123"
+                    callback: function done(msg) {
+                        debugger
+                        console.log(msg);
+                        alert("Message successfully sent");
+                    }
+                }
+            );
+        }
+    </script>
 </body>
 </html>
